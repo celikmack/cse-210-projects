@@ -1,0 +1,21 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+
+public class Entry
+{
+    public string _date;
+    public string _prompText;
+    public string _entryText;
+
+    public Entry()
+    {
+        DateTime now = DateTime.Now;
+        _date = now.ToString("yyyy/MM/dd");
+    }
+
+    public void Display()
+    {
+        Console.WriteLine($"Date: {_date} - Prompt: {_prompText}");
+        Console.WriteLine($"{_entryText}");
+    }
+}
