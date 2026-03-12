@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 public class Entry
 {
     public string _date;
-    public string _prompText;
+    public string _promptText;
     public string _entryText;
 
     public Entry()
@@ -15,7 +15,7 @@ public class Entry
 
     public void Display()
     {
-        Console.WriteLine($"Date: {_date} - Prompt: {_prompText}");
+        Console.WriteLine($"Date: {_date} - Prompt: {_promptText}");
         Console.WriteLine($"{_entryText}");
     }
 }

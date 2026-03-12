@@ -14,7 +14,7 @@ public class Journal
     {
         foreach (Entry entry in _entries)
         {
-            Console.WriteLine($"Date: {entry._date} - {entry._prompText}");
+            Console.WriteLine($"Date: {entry._date} - {entry._promptText}");
             Console.WriteLine($"{entry._entryText}");
         }
     }
@@ -26,7 +26,7 @@ public class Journal
         {
             foreach (Entry e in _entries)
             {
-                output.WriteLine($"{e._date}, {e._prompText}, {e._entryText}");
+                output.WriteLine($"{e._date}, {e._promptText}, {e._entryText}");
             }
         }
     }
@@ -44,7 +44,7 @@ public class Journal
             Entry newEntry = new Entry
             {
                 _date = parts[0],
-                _prompText = parts[1],
+                _promptText = parts[1],
                 _entryText = parts[2]
             };
 
@@ -75,7 +75,7 @@ public class Journal
 
         foreach (Entry entry in _entries)
         {
-            if (entry._entryText.Contains(word) || entry._prompText.Contains(word));
+            if (entry._entryText.Contains(word) || entry._promptText.Contains(word))
             {
                 entry.Display();
                 found = true;

@@ -45,7 +45,7 @@ class Program
 
                     Entry newEntry = new Entry
                     {
-                        _prompText = prompt,
+                        _promptText = prompt,
                         _entryText = userResponse
                     };
 
