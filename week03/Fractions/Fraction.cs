@@ -3,8 +3,8 @@ using System.ComponentModel;
 
 public class Fraction
 {
-    private int _top { get; set;}
-    private int _bottom { get; set;}
+    private int _top;
+    private int _bottom;
 
     public Fraction()
     {
