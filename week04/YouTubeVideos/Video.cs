@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Transactions;
 
 public class Video
 {
@@ -8,19 +7,27 @@ public class Video
     public string _author;
     public int _lengthSeconds;
 
-    public List<Comment> Comments = new List<Comment>();
+    public List<Comment> _comments = new List<Comment>();
 
-    public int NumberofComments()
+    public Video(string title, string author, int lengthSeconds)
     {
-        return Comments.Count;
+        _title = title;
+        _author = author;
+        _lengthSeconds =lengthSeconds;
     }
 
-    public void DisplayVideoInfo()
+    public void AddComment(Comment comment)
     {
-        Console.WriteLine($"Title: {_title}");
-        Console.WriteLine($"Author: {_author}");
-        Console.WriteLine($"Length: {_lengthSeconds} seconds");
-        Console.WriteLine($"Number of Comments: {NumberofComments()}");
+        _comments.Add(comment);
+    }
+    public int NumberofComments()
+    {
+        return _comments.Count;
+    }
+
+    public List<Comment> GetComments()
+    {
+        return _comments;
     }
 }
 
