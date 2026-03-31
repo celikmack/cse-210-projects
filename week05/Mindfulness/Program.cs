@@ -1,5 +1,10 @@
 using System;
 
+/*
+    Exceeding Requirements:
+    I have added another class: SingingActivity.
+    
+*/
 class Program
 {
     static void Main(string[] args)
