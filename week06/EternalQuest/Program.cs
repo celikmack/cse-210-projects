@@ -1,9 +1,14 @@
 using System;
 
+/*
+I've added a welcome message at the beginning of the program (GoalManager class).
+I've added a ShowCelebration method to congratulate the user when a checklist goal is completed (ChecklistGoal class).
+*/
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the EternalQuest Project.");
+        GoalManager manager = new GoalManager();
+        manager.Start();
     }
 }
